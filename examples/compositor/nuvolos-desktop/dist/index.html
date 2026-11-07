@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuvolos Desktop</title>
+    <style>
+        * { margin:0; padding:0; }
+        html, body { width:100%; height:100%; overflow:hidden; background:#000; }
+        canvas { height: 100vh; width: 100vw; display:block; }
+        #notify {
+            display:none;
+            position:fixed; left:50%; bottom:1.5rem; transform:translateX(-50%);
+            max-width:min(90vw, 40rem);
+            background:rgba(20,20,24,.92); color:#fff;
+            font:13px/1.4 system-ui, sans-serif;
+            padding:.6rem .9rem; border-radius:.5rem; z-index:10;
+            white-space:pre-wrap;
+        }
+    </style>
+  <script type="module" crossorigin src="./assets/index-DOUb9rvY.js"></script>
+</head>
+<body>
+<canvas id="output" tabindex="1"></canvas>
+<div id="notify" role="alert"></div>
+</body>
+</html>
