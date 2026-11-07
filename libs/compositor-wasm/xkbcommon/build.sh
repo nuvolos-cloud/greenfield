@@ -15,7 +15,8 @@ ensure_repo() {
 }
 
 ensure_repo_xkeyboard-config() {
-      git clone --depth 1 --branch "master" "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config.git" repo-xkeyboard-config
+      # Pinned: master renamed -Dxkb-base (removed ~2.41); build.sh passes it.
+      git clone --depth 1 --branch "xkeyboard-config-2.40" "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config.git" repo-xkeyboard-config
 }
 
 ensure_repo_xml2() {
